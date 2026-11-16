@@ -2,7 +2,7 @@
 
 The model list that hi.ai uses. One file, `catalog.json`: the local models hi.ai offers (with download size, memory needed, licence and source), the embedding models for the brain, and the cloud subscriptions and pay as you go offers with a link to each official page.
 
-hi.ai carries a copy of this list, so it works offline. Once a day it fetches the newest one from here and keeps it only when two things are true:
+hi.ai carries a copy of this list, so it works offline. Once a day while it runs, it fetches the newest one from here and keeps it only when two things are true:
 
 1. The file `catalog.json.sig` is a valid ed25519 signature over the exact bytes of `catalog.json`, made with the key below.
 2. The "checked" day in the file is newer than the day in the copy built into hi.ai.
@@ -30,6 +30,11 @@ openssl pkeyutl -verify -pubin -keyform DER -inkey hi-ai-models.pub.der -rawin -
 ```
 
 It prints `Signature Verified Successfully`.
+
+## What the file does not have yet
+
+- No schema version field. `catalog.json` has the keys `about`, `checked`, `local_chat`, `local_code`, `brain_embed` and `cloud`, and hi.ai reads them by name.
+- The signature proves the file came from the key holder. It does not prove each fact on the page of its source is still true; the "checked" day says when it was last looked at.
 
 ## Settings in hi.ai
 
