@@ -19,15 +19,13 @@ The signature file holds the signature as hex text.
 
 ## Check a signature by hand
 
-You need `openssl` 3 or newer and `xxd`.
+You need `openssl` 3 or newer and `python3` (no other tool).
 
 ```sh
 curl -sO https://raw.githubusercontent.com/thejocorp/hi-ai-models/main/catalog.json
 curl -sO https://raw.githubusercontent.com/thejocorp/hi-ai-models/main/catalog.json.sig
-# the public key in DER form: the fixed ed25519 header plus the 32 key bytes
-( printf '302a300506032b6570032100' ; echo 3b244186654a352e7bfbc2559a47752dd93b11bcb582c87e6ec7dbe52118d7b4 ) \
-  | xxd -r -p > hi-ai-models.pub.der
-tr -d '[:space:]' < catalog.json.sig | xxd -r -p > catalog.json.sig.bin
+# the public key in DER form (the fixed ed25519 header plus the 32 key bytes) and the signature as raw bytes
+python3 -c "import sys;open('hi-ai-models.pub.der','wb').write(bytes.fromhex('302a300506032b6570032100'+'3b244186654a352e7bfbc2559a47752dd93b11bcb582c87e6ec7dbe52118d7b4'));open('catalog.json.sig.bin','wb').write(bytes.fromhex(open('catalog.json.sig').read().strip()))"
 openssl pkeyutl -verify -pubin -keyform DER -inkey hi-ai-models.pub.der -rawin -in catalog.json -sigfile catalog.json.sig.bin
 ```
 
