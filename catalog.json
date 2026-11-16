@@ -1,4 +1,5 @@
 {
+  "schema_version": 1,
   "about": "Facts that change: which models hi.ai offers, with their sizes, the memory they need and where each fact comes from. hi.ai carries this file, so it works offline. Every entry names its source and the day it was checked.",
   "checked": "2026-11-16",
   "local_chat": {
@@ -351,6 +352,108 @@
         "source": "https://openai.com/api/pricing/",
         "checked": "2026-11-14",
         "how": "In hi.ai: Setup, Models, add an API with the address https://api.openai.com/v1 and your key."
+      }
+    ]
+  },
+  "brain_server": {
+    "name": "OpenViking",
+    "package": "openviking",
+    "version": "0.5.5",
+    "python": "3.12",
+    "licence": "AGPL-3.0",
+    "source": "https://pypi.org/project/openviking/0.5.5/",
+    "code": "https://github.com/volcengine/OpenViking",
+    "checked": "2026-11-16",
+    "download_mb": 375,
+    "disk_mb": 980,
+    "install_peak_mb": 1900,
+    "ram_gb": 0.5,
+    "measured": "On the agents VM, 16 Nov 2026: uv 0.13.8 and Python 3.12 from uv, then OpenViking 0.5.5 from PyPI; 357 MB came over the network (plus 18 MB for uv), the folder held 1.9 GB before uv's cache was removed and 0.98 GB after; the server held 489 MB with one note written.",
+    "uv": {
+      "source": "https://github.com/astral-sh/uv/releases",
+      "licence": "MIT or Apache-2.0",
+      "checked": "2026-11-16"
+    }
+  },
+  "agent_models": {
+    "about": "The models behind the names agents take (an alias such as haiku, or an id such as gemini-4-argon-high), named as their makers name them, each with the maker's own line on what it is for. Claude Code's aliases resolve as its docs say for the Anthropic API, which a sign in uses; other clouds may give an earlier version. Antigravity's names come from its own model list (agy models).",
+    "alias_source": "https://code.claude.com/docs/en/model-config",
+    "names_source": "agy models, run on 16 Nov 2026",
+    "models": [
+      {
+        "ids": [
+          "opus",
+          "best",
+          "claude-opus-5-5"
+        ],
+        "name": "Opus 5.5",
+        "maker": "Anthropic",
+        "good_for": "For long-running agentic coding and knowledge work.",
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-16"
+      },
+      {
+        "ids": [
+          "sonnet",
+          "claude-sonnet-5-5"
+        ],
+        "name": "Sonnet 5.5",
+        "maker": "Anthropic",
+        "good_for": "The best combination of speed and intelligence.",
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-16"
+      },
+      {
+        "ids": [
+          "haiku",
+          "claude-haiku-5-5"
+        ],
+        "name": "Haiku 5.5",
+        "maker": "Anthropic",
+        "good_for": "For high-volume, latency-sensitive tasks such as classification, extraction and routing.",
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-16"
+      },
+      {
+        "ids": [
+          "fable",
+          "claude-fable-5-2"
+        ],
+        "name": "Fable 5.2",
+        "maker": "Anthropic",
+        "good_for": "For demanding reasoning and long-horizon agentic work.",
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-16"
+      },
+      {
+        "ids": [
+          "gemini-4-argon"
+        ],
+        "name": "Gemini 4 Argon",
+        "maker": "Google",
+        "good_for": "Google's efficient Gemini 4 frontier reasoning model, with faster responses and lower token spend per turn.",
+        "source": "https://aistudio.google.com/docs/models",
+        "checked": "2026-11-16"
+      },
+      {
+        "ids": [
+          "gemini-4-hydrogen"
+        ],
+        "name": "Gemini 4 Hydrogen",
+        "maker": "Google",
+        "good_for": "Speed and efficiency for everyday coding and agentic workflows.",
+        "source": "https://aistudio.google.com/docs/models",
+        "checked": "2026-11-16"
+      },
+      {
+        "ids": [
+          "gemini-3.8-flash"
+        ],
+        "name": "Gemini 3.8 Flash",
+        "maker": "Google",
+        "good_for": "Google's previous-generation Flash model for software engineering, autonomous agents and complex enterprise workflows.",
+        "source": "https://aistudio.google.com/docs/models",
+        "checked": "2026-11-16"
       }
     ]
   }
