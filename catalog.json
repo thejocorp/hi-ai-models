@@ -1,0 +1,357 @@
+{
+  "about": "Facts that change: which models hi.ai offers, with their sizes, the memory they need and where each fact comes from. hi.ai carries this file, so it works offline. Every entry names its source and the day it was checked.",
+  "checked": "2026-11-16",
+  "local_chat": {
+    "picked_from": "Atomic Agent's curated list (MIT): github.com/AtomicBot-ai/atomic-agent, commit 1c5eacc, src/local-llm/catalog/models-catalog.ts",
+    "memory": "ram_gb is the memory a computer should have for the model to run comfortably, min_ram_gb the least it runs with; both from the list above, in decimal GB",
+    "models": [
+      {
+        "id": "qwen-3.5-2b",
+        "name": "Qwen 3.5 2B",
+        "repo": "unsloth/Qwen3.5-2B-GGUF",
+        "file": "Qwen3.5-2B-UD-Q4_K_XL.gguf",
+        "size_gb": 1.34,
+        "min_ram_gb": 4,
+        "ram_gb": 6,
+        "rank": null,
+        "licence": "Apache-2.0",
+        "about": "Tiny and quick. Writes prompts and short answers on almost any computer.",
+        "source": "https://huggingface.co/unsloth/Qwen3.5-2B-GGUF",
+        "checked": "2026-11-16"
+      },
+      {
+        "id": "qwen-3.5-4b",
+        "name": "Qwen 3.5 4B",
+        "repo": "unsloth/Qwen3.5-4B-GGUF",
+        "file": "Qwen3.5-4B-Q4_K_M.gguf",
+        "size_gb": 2.74,
+        "min_ram_gb": 6,
+        "ram_gb": 8,
+        "rank": 8,
+        "licence": "Apache-2.0",
+        "about": "Small and quick to download. Good for prompts and everyday questions.",
+        "source": "https://huggingface.co/unsloth/Qwen3.5-4B-GGUF",
+        "checked": "2026-11-16"
+      },
+      {
+        "id": "gemma-4-e4b",
+        "name": "Gemma 4 E4B",
+        "repo": "unsloth/gemma-4-E4B-it-qat-GGUF",
+        "file": "gemma-4-E4B-it-qat-UD-Q4_K_XL.gguf",
+        "size_gb": 4.22,
+        "min_ram_gb": 6,
+        "ram_gb": 8,
+        "rank": 10,
+        "licence": "Apache-2.0",
+        "about": "Small Gemma from Google, for 8 GB computers and up.",
+        "source": "https://huggingface.co/unsloth/gemma-4-E4B-it-qat-GGUF",
+        "checked": "2026-11-16"
+      },
+      {
+        "id": "qwen-3.5-9b",
+        "name": "Qwen 3.5 9B",
+        "repo": "unsloth/Qwen3.5-9B-GGUF",
+        "file": "Qwen3.5-9B-Q4_K_M.gguf",
+        "size_gb": 5.68,
+        "min_ram_gb": 10,
+        "ram_gb": 16,
+        "rank": 7,
+        "licence": "Apache-2.0",
+        "about": "Everyday mid-size model. Thinks more carefully than the small ones.",
+        "source": "https://huggingface.co/unsloth/Qwen3.5-9B-GGUF",
+        "checked": "2026-11-16"
+      },
+      {
+        "id": "gemma-4-12b",
+        "name": "Gemma 4 12B",
+        "repo": "unsloth/gemma-4-12B-it-qat-GGUF",
+        "file": "gemma-4-12B-it-qat-UD-Q4_K_XL.gguf",
+        "size_gb": 6.72,
+        "min_ram_gb": 8,
+        "ram_gb": 12,
+        "rank": 9,
+        "licence": "Apache-2.0",
+        "about": "Mid-size Gemma from Google, for 12 GB computers and up.",
+        "source": "https://huggingface.co/unsloth/gemma-4-12B-it-qat-GGUF",
+        "checked": "2026-11-16"
+      },
+      {
+        "id": "gemma-4-26b-a4b",
+        "name": "Gemma 4 26B A4B",
+        "repo": "unsloth/gemma-4-26B-A4B-it-qat-GGUF",
+        "file": "gemma-4-26B-A4B-it-qat-UD-Q4_K_XL.gguf",
+        "size_gb": 14.25,
+        "min_ram_gb": 16,
+        "ram_gb": 20,
+        "rank": 2,
+        "licence": "Apache-2.0",
+        "about": "Big Gemma that stays quick for its size.",
+        "source": "https://huggingface.co/unsloth/gemma-4-26B-A4B-it-qat-GGUF",
+        "checked": "2026-11-16"
+      },
+      {
+        "id": "gemma-4-31b",
+        "name": "Gemma 4 31B",
+        "repo": "unsloth/gemma-4-31B-it-qat-GGUF",
+        "file": "gemma-4-31B-it-qat-UD-Q4_K_XL.gguf",
+        "size_gb": 17.29,
+        "min_ram_gb": 20,
+        "ram_gb": 24,
+        "rank": 6,
+        "licence": "Apache-2.0",
+        "about": "The biggest Gemma, for 24 GB computers and up.",
+        "source": "https://huggingface.co/unsloth/gemma-4-31B-it-qat-GGUF",
+        "checked": "2026-11-16"
+      },
+      {
+        "id": "qwen-3.8-27b",
+        "name": "Qwen 3.8 27B",
+        "repo": "unsloth/Qwen3.8-27B-GGUF",
+        "file": "Qwen3.8-27B-UD-Q4_K_XL.gguf",
+        "size_gb": 17.66,
+        "min_ram_gb": 20,
+        "ram_gb": 28,
+        "rank": 4,
+        "licence": "Apache-2.0",
+        "about": "The newest big Qwen, for 28 GB computers and up.",
+        "source": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+        "checked": "2026-11-16"
+      },
+      {
+        "id": "qwen-3.6-35b-a3b",
+        "name": "Qwen 3.6 35B A3B",
+        "repo": "unsloth/Qwen3.6-35B-A3B-GGUF",
+        "file": "Qwen3.6-35B-A3B-UD-Q4_K_XL.gguf",
+        "size_gb": 22.36,
+        "min_ram_gb": 24,
+        "ram_gb": 36,
+        "rank": 1,
+        "licence": "Apache-2.0",
+        "about": "Big Qwen that stays quick for its size, for 36 GB computers and up.",
+        "source": "https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF",
+        "checked": "2026-11-16"
+      }
+    ]
+  },
+  "local_code": {
+    "picked_from": "The makers' own coding models with an Apache-2.0 licence, newest of each family on Hugging Face on 14 Nov 2026 (Qwen, Mistral); file sizes from each GGUF repository's file list.",
+    "memory": "hi.ai's own estimate until measured: min_ram_gb is the file plus 8 GB (a coding agent needs a window of 32,768 tokens or more, and the system needs room), ram_gb is 1.5 times the file plus 8 GB.",
+    "models": [
+      {
+        "id": "devstral-small-2-24b",
+        "name": "Devstral Small 2 24B",
+        "repo": "unsloth/Devstral-Small-2-24B-Instruct-2512-GGUF",
+        "file": "Devstral-Small-2-24B-Instruct-2512-Q4_K_M.gguf",
+        "size_gb": 14.33,
+        "min_ram_gb": 23,
+        "ram_gb": 30,
+        "licence": "Apache-2.0",
+        "about": "Mistral's coding agent model, 24 billion parameters, all of them used for every word.",
+        "source": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512",
+        "checked": "2026-11-16"
+      },
+      {
+        "id": "qwen-3-coder-30b-a3b",
+        "name": "Qwen3 Coder 30B A3B",
+        "repo": "unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF",
+        "file": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M.gguf",
+        "size_gb": 18.56,
+        "min_ram_gb": 27,
+        "ram_gb": 36,
+        "licence": "Apache-2.0",
+        "about": "Qwen's coding model, 30.5 billion parameters of which about 3 billion work on each word, so it is fast on the processor.",
+        "source": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
+        "checked": "2026-11-16"
+      },
+      {
+        "id": "qwen-3-coder-next",
+        "name": "Qwen3 Coder Next",
+        "repo": "unsloth/Qwen3-Coder-Next-GGUF",
+        "file": "Qwen3-Coder-Next-Q4_K_M.gguf",
+        "size_gb": 48.53,
+        "min_ram_gb": 57,
+        "ram_gb": 81,
+        "licence": "Apache-2.0",
+        "about": "Qwen's newest coding model (January 2026), 79.7 billion parameters on the Qwen3-Next design; for computers with 64 GB or more.",
+        "source": "https://huggingface.co/Qwen/Qwen3-Coder-Next",
+        "checked": "2026-11-16"
+      }
+    ]
+  },
+  "brain_embed": {
+    "picked_from": "Atomic Agent's curated embedding list (MIT): github.com/AtomicBot-ai/atomic-agent, commit 1c5eacc, src/local-llm/catalog/models-catalog.ts; the BGE models, whose GGUF file, dimension and pooling it names. File sizes from each GGUF repository's file list, licences from BAAI's model records, ctx from max_seq_length in each model's sentence_bert_config.json on Hugging Face (checked 16 Nov 2026).",
+    "memory": "hi.ai's own estimate until measured: need_gb is the file plus 0.5 GB for the embedding server and runtime.",
+    "models": [
+      {
+        "id": "bge-small-en-v1.5",
+        "name": "BGE Small English v1.5",
+        "repo": "CompendiumLabs/bge-small-en-v1.5-gguf",
+        "file": "bge-small-en-v1.5-q8_0.gguf",
+        "size_gb": 0.037,
+        "dim": 384,
+        "pooling": "cls",
+        "ctx": 512,
+        "languages": "English",
+        "licence": "MIT",
+        "about": "The smallest: fast on any computer, notes in English.",
+        "source": "https://huggingface.co/BAAI/bge-small-en-v1.5",
+        "checked": "2026-11-16"
+      },
+      {
+        "id": "bge-base-en-v1.5",
+        "name": "BGE Base English v1.5",
+        "repo": "CompendiumLabs/bge-base-en-v1.5-gguf",
+        "file": "bge-base-en-v1.5-q8_0.gguf",
+        "size_gb": 0.118,
+        "dim": 768,
+        "pooling": "cls",
+        "ctx": 512,
+        "languages": "English",
+        "licence": "MIT",
+        "about": "Finds notes by meaning more closely than the small one, still light.",
+        "source": "https://huggingface.co/BAAI/bge-base-en-v1.5",
+        "checked": "2026-11-16"
+      },
+      {
+        "id": "bge-m3",
+        "name": "BGE-M3",
+        "repo": "lm-kit/bge-m3-gguf",
+        "file": "bge-m3-Q8_0.gguf",
+        "size_gb": 0.635,
+        "dim": 1024,
+        "pooling": "cls",
+        "ctx": 8192,
+        "languages": "more than 100 languages",
+        "licence": "MIT",
+        "about": "For notes in other languages than English, and long notes (8,192 tokens).",
+        "source": "https://huggingface.co/BAAI/bge-m3",
+        "checked": "2026-11-16"
+      }
+    ]
+  },
+  "cloud": {
+    "about": "Offers for people without a local model: subscriptions and pay as you go. Prices in US dollars only where the official page states them; otherwise the page shows the price for your country. Each pairing of an offer and an agent is one the offer's own page names.",
+    "subscriptions": [
+      {
+        "id": "claude",
+        "name": "Claude",
+        "maker": "Anthropic",
+        "good_for": "Writing, thinking things through and coding. Claude Code, Anthropic's agent for the terminal, comes with Pro and up.",
+        "plans": "Free $0 · Pro $20 a month ($17 a month billed yearly) · Max $100 a month · Ultra $200 a month",
+        "free": "Yes, for chat. Claude Code starts with Pro.",
+        "agents": [
+          "claude"
+        ],
+        "link": "https://claude.com/pricing",
+        "source": "https://claude.com/pricing",
+        "checked": "2026-11-16"
+      },
+      {
+        "id": "chatgpt",
+        "name": "ChatGPT",
+        "maker": "OpenAI",
+        "good_for": "Everyday questions, pictures, voice and research. Codex, OpenAI's coding agent, comes with every plan; Plus and Pro give it more use.",
+        "plans": "Free · Go · Plus · Pro. The price depends on your country; the official page shows yours.",
+        "free": "Yes, with limited Codex use.",
+        "agents": [
+          "codex"
+        ],
+        "link": "https://chatgpt.com/pricing",
+        "source": "https://chatgpt.com/pricing",
+        "checked": "2026-11-16"
+      },
+      {
+        "id": "google-ai",
+        "name": "Google AI",
+        "maker": "Google",
+        "good_for": "Gemini in Google's apps, with cloud storage. AI Pro and AI Ultra give more use of Gemini in Antigravity, Google's agent app.",
+        "plans": "AI Plus · AI Pro · AI Ultra. The price depends on your country; the official page shows yours.",
+        "free": "Not stated on the official page.",
+        "agents": [
+          "agy"
+        ],
+        "link": "https://one.google.com/about/google-ai-plans/",
+        "source": "https://one.google.com/about/google-ai-plans/",
+        "checked": "2026-11-16"
+      },
+      {
+        "id": "copilot",
+        "name": "GitHub Copilot",
+        "maker": "GitHub",
+        "good_for": "Coding in the editor and the terminal. Pro and up also run Claude Code and Codex inside GitHub Copilot.",
+        "plans": "Free $0 · Pro $10 a month · Pro+ $39 a month · Max $100 a month",
+        "free": "Yes: the Free plan includes Copilot CLI and agent mode, with limited use.",
+        "agents": [
+          "copilot"
+        ],
+        "link": "https://github.com/features/copilot/plans",
+        "source": "https://github.com/features/copilot/plans",
+        "checked": "2026-11-16"
+      }
+    ],
+    "pay_as_you_go": [
+      {
+        "id": "openrouter",
+        "name": "OpenRouter",
+        "good_for": "One key for hundreds of models from many makers. You pay per use, and some models cost nothing.",
+        "plans": "Pay per use; each model shows its price per million tokens.",
+        "free": "Yes, some models are free.",
+        "agents": [
+          "hi.ai"
+        ],
+        "live": "https://openrouter.ai/api/v1/models",
+        "link": "https://openrouter.ai/settings/keys",
+        "source": "https://openrouter.ai/docs/quickstart",
+        "checked": "2026-11-16",
+        "how": "In hi.ai: Setup, Models, add an API with the address https://openrouter.ai/api/v1 and your key."
+      },
+      {
+        "id": "claude-api",
+        "name": "Claude API",
+        "maker": "Anthropic",
+        "good_for": "Claude models for your own scripts and agents, paid per use.",
+        "plans": "Pay per use; prices per model on the official page.",
+        "free": "New users get free credits to test it.",
+        "agents": [
+          "hi.ai"
+        ],
+        "link": "https://platform.claude.com/settings/keys",
+        "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+        "checked": "2026-11-16",
+        "how": "In hi.ai: Setup, Models, add an API with the address https://api.anthropic.com/v1/ and your key.",
+        "how_source": "https://docs.claude.com/en/api/openai-sdk"
+      },
+      {
+        "id": "gemini-api",
+        "name": "Gemini API",
+        "maker": "Google",
+        "good_for": "Gemini models for your own scripts and agents. Google AI Studio itself is free.",
+        "plans": "A free tier with limits, then pay per use. The newest Gemini 4 models are not in the free tier.",
+        "free": "Yes, with limits.",
+        "agents": [
+          "hi.ai"
+        ],
+        "link": "https://aistudio.google.com/apikey",
+        "source": "https://ai.google.dev/gemini-api/docs/pricing",
+        "checked": "2026-11-16",
+        "how": "In hi.ai: Setup, Models, add an API with the address https://generativelanguage.googleapis.com/v1beta/openai/ and your key.",
+        "how_source": "https://ai.google.dev/gemini-api/docs/openai"
+      },
+      {
+        "id": "openai-api",
+        "name": "OpenAI API",
+        "maker": "OpenAI",
+        "good_for": "OpenAI's models for your own scripts and agents, paid per use.",
+        "plans": "Pay per use; the official page refused an automatic check on 14 and 16 Nov 2026, so open it to see the prices.",
+        "free": "Not checked.",
+        "agents": [
+          "hi.ai"
+        ],
+        "link": "https://platform.openai.com/api-keys",
+        "source": "https://openai.com/api/pricing/",
+        "checked": "2026-11-14",
+        "how": "In hi.ai: Setup, Models, add an API with the address https://api.openai.com/v1 and your key."
+      }
+    ]
+  }
+}
